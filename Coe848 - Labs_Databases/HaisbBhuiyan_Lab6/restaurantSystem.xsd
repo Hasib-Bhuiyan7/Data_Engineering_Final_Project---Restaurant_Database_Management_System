@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="RestaurantSystem">
+    <xs:complexType>
+      <xs:sequence>
+
+        <!-- Restaurants -->
+        <xs:element name="Restaurants">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Restaurant" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="restaurant_id" type="xs:int"/>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="address" type="xs:string"/>
+                    <xs:element name="phone_number" type="xs:string"/>
+                    <xs:element name="cuisine_type" type="xs:string"/>
+                    <xs:element name="opening_hours" type="xs:string"/>
+                    <xs:element name="closing_hours" type="xs:string"/>
+                    <xs:element name="total_capacity" type="xs:int"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Customers -->
+        <xs:element name="Customers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="customer_id" type="xs:int"/>
+                    <xs:element name="first_name" type="xs:string"/>
+                    <xs:element name="last_name" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="phone_number" type="xs:string" minOccurs="0"/>
+                    <xs:element name="loyalty_status" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Staff -->
+        <xs:element name="Staffs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Staff" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="staff_id" type="xs:int"/>
+                    <xs:element name="restaurant_id" type="xs:int"/>
+                    <xs:element name="first_name" type="xs:string"/>
+                    <xs:element name="last_name" type="xs:string"/>
+                    <xs:element name="role" type="xs:string"/>
+                    <xs:element name="hourly_wage" type="xs:decimal"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Dining Tables -->
+        <xs:element name="DiningTables">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DiningTable" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="restaurant_id" type="xs:int"/>
+                    <xs:element name="table_number" type="xs:int"/>
+                    <xs:element name="seating_capacity" type="xs:int"/>
+                    <xs:element name="availability_status" type="xs:string"/>
+                    <xs:element name="seating_location_description" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Menu Items -->
+        <xs:element name="MenuItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MenuItem" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="menu_item_id" type="xs:int"/>
+                    <xs:element name="staff_id" type="xs:int"/>
+                    <xs:element name="item_name" type="xs:string"/>
+                    <xs:element name="price" type="xs:decimal"/>
+                    <xs:element name="availability_status" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Orders -->
+        <xs:element name="Orders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Order" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="order_id" type="xs:int"/>
+                    <xs:element name="customer_id" type="xs:int"/>
+                    <xs:element name="restaurant_id" type="xs:int"/>
+                    <xs:element name="reservation_id" type="xs:int"/>
+                    <xs:element name="order_date" type="xs:string"/>
+                    <xs:element name="total_amount" type="xs:decimal"/>
+                    <xs:element name="order_status" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Reservations -->
+        <xs:element name="Reservations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Reservation" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="reservation_id" type="xs:int"/>
+                    <xs:element name="customer_id" type="xs:int"/>
+                    <xs:element name="restaurant_id" type="xs:int"/>
+                    <xs:element name="table_number" type="xs:int"/>
+                    <xs:element name="reservation_date" type="xs:string"/>
+                    <xs:element name="reservation_time" type="xs:string"/>
+                    <xs:element name="number_of_guests" type="xs:int"/>
+                    <xs:element name="reservation_status" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- OrderHandledBy -->
+        <xs:element name="OrderHandledBy">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderHandled" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="order_id" type="xs:int"/>
+                    <xs:element name="staff_id" type="xs:int"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- OrderContainsItems -->
+        <xs:element name="OrderContainsItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderItem" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="order_id" type="xs:int"/>
+                    <xs:element name="menu_item_id" type="xs:int"/>
+                    <xs:element name="quantity" type="xs:int"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- PRIMARY KEYS -->
+    <xs:key name="restaurantKey">
+      <xs:selector xpath="Restaurants/Restaurant"/>
+      <xs:field xpath="restaurant_id"/>
+    </xs:key>
+
+    <xs:key name="customerKey">
+      <xs:selector xpath="Customers/Customer"/>
+      <xs:field xpath="customer_id"/>
+    </xs:key>
+
+    <xs:key name="staffKey">
+      <xs:selector xpath="Staffs/Staff"/>
+      <xs:field xpath="staff_id"/>
+    </xs:key>
+
+    <xs:key name="menuItemKey">
+      <xs:selector xpath="MenuItems/MenuItem"/>
+      <xs:field xpath="menu_item_id"/>
+    </xs:key>
+
+    <xs:key name="orderKey">
+      <xs:selector xpath="Orders/Order"/>
+      <xs:field xpath="order_id"/>
+    </xs:key>
+
+    <xs:key name="reservationKey">
+      <xs:selector xpath="Reservations/Reservation"/>
+      <xs:field xpath="reservation_id"/>
+    </xs:key>
+
+    <!-- COMPOSITE KEY (DiningTable) -->
+    <xs:key name="diningTableKey">
+      <xs:selector xpath="DiningTables/DiningTable"/>
+      <xs:field xpath="restaurant_id"/>
+      <xs:field xpath="table_number"/>
+    </xs:key>
+
+    <!-- FOREIGN KEYS -->
+    <xs:keyref name="staffRestaurantFK" refer="restaurantKey">
+      <xs:selector xpath="Staffs/Staff"/>
+      <xs:field xpath="restaurant_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="menuStaffFK" refer="staffKey">
+      <xs:selector xpath="MenuItems/MenuItem"/>
+      <xs:field xpath="staff_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="orderCustomerFK" refer="customerKey">
+      <xs:selector xpath="Orders/Order"/>
+      <xs:field xpath="customer_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="orderRestaurantFK" refer="restaurantKey">
+      <xs:selector xpath="Orders/Order"/>
+      <xs:field xpath="restaurant_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="orderReservationFK" refer="reservationKey">
+      <xs:selector xpath="Orders/Order"/>
+      <xs:field xpath="reservation_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="reservationCustomerFK" refer="customerKey">
+      <xs:selector xpath="Reservations/Reservation"/>
+      <xs:field xpath="customer_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="reservationRestaurantFK" refer="restaurantKey">
+      <xs:selector xpath="Reservations/Reservation"/>
+      <xs:field xpath="restaurant_id"/>
+    </xs:keyref>
+
+    <!-- COMPOSITE FK -->
+    <xs:keyref name="reservationTableFK" refer="diningTableKey">
+      <xs:selector xpath="Reservations/Reservation"/>
+      <xs:field xpath="restaurant_id"/>
+      <xs:field xpath="table_number"/>
+    </xs:keyref>
+
+    <xs:keyref name="orderHandledOrderFK" refer="orderKey">
+      <xs:selector xpath="OrderHandledBy/OrderHandled"/>
+      <xs:field xpath="order_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="orderHandledStaffFK" refer="staffKey">
+      <xs:selector xpath="OrderHandledBy/OrderHandled"/>
+      <xs:field xpath="staff_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="orderItemOrderFK" refer="orderKey">
+      <xs:selector xpath="OrderContainsItems/OrderItem"/>
+      <xs:field xpath="order_id"/>
+    </xs:keyref>
+
+    <xs:keyref name="orderItemMenuFK" refer="menuItemKey">
+      <xs:selector xpath="OrderContainsItems/OrderItem"/>
+      <xs:field xpath="menu_item_id"/>
+    </xs:keyref>
+
+  </xs:element>
+
+</xs:schema>

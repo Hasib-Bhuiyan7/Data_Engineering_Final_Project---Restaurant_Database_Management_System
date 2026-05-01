@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<RestaurantSystem>
+
+<Restaurants>
+<Restaurant><restaurant_id>1</restaurant_id><name>Villa Grill</name><address>123 King St Toronto</address><phone_number>4165551000</phone_number><cuisine_type>Mediterranean</cuisine_type><opening_hours>10:00</opening_hours><closing_hours>22:00</closing_hours><total_capacity>80</total_capacity></Restaurant>
+<Restaurant><restaurant_id>2</restaurant_id><name>Sunset Sushi</name><address>22 Queen St Toronto</address><phone_number>4165551001</phone_number><cuisine_type>Japanese</cuisine_type><opening_hours>11:00</opening_hours><closing_hours>23:00</closing_hours><total_capacity>60</total_capacity></Restaurant>
+<Restaurant><restaurant_id>3</restaurant_id><name>Pasta Palace</name><address>77 Dundas St Toronto</address><phone_number>4165551002</phone_number><cuisine_type>Italian</cuisine_type><opening_hours>10:00</opening_hours><closing_hours>22:00</closing_hours><total_capacity>70</total_capacity></Restaurant>
+<Restaurant><restaurant_id>4</restaurant_id><name>Spice Route</name><address>90 Bloor St Toronto</address><phone_number>4165551003</phone_number><cuisine_type>Indian</cuisine_type><opening_hours>11:00</opening_hours><closing_hours>23:00</closing_hours><total_capacity>75</total_capacity></Restaurant>
+<Restaurant><restaurant_id>5</restaurant_id><name>Taco Town</name><address>15 Front St Toronto</address><phone_number>4165551004</phone_number><cuisine_type>Mexican</cuisine_type><opening_hours>10:00</opening_hours><closing_hours>21:00</closing_hours><total_capacity>50</total_capacity></Restaurant>
+<Restaurant><restaurant_id>6</restaurant_id><name>Dragon Wok</name><address>55 Yonge St Toronto</address><phone_number>4165551005</phone_number><cuisine_type>Chinese</cuisine_type><opening_hours>11:00</opening_hours><closing_hours>22:30</closing_hours><total_capacity>65</total_capacity></Restaurant>
+<Restaurant><restaurant_id>7</restaurant_id><name>Burger Barn</name><address>300 College St Toronto</address><phone_number>4165551006</phone_number><cuisine_type>American</cuisine_type><opening_hours>10:00</opening_hours><closing_hours>22:00</closing_hours><total_capacity>90</total_capacity></Restaurant>
+<Restaurant><restaurant_id>8</restaurant_id><name>Green Garden</name><address>88 Bay St Toronto</address><phone_number>4165551007</phone_number><cuisine_type>Vegetarian</cuisine_type><opening_hours>09:00</opening_hours><closing_hours>21:00</closing_hours><total_capacity>55</total_capacity></Restaurant>
+<Restaurant><restaurant_id>9</restaurant_id><name>Seaside Grill</name><address>12 Harbour St Toronto</address><phone_number>4165551008</phone_number><cuisine_type>Seafood</cuisine_type><opening_hours>11:00</opening_hours><closing_hours>23:00</closing_hours><total_capacity>85</total_capacity></Restaurant>
+<Restaurant><restaurant_id>10</restaurant_id><name>Golden Curry</name><address>9 Spadina Ave Toronto</address><phone_number>4165551009</phone_number><cuisine_type>Thai</cuisine_type><opening_hours>11:00</opening_hours><closing_hours>22:00</closing_hours><total_capacity>60</total_capacity></Restaurant>
+</Restaurants>
+
+<Customers>
+<Customer><customer_id>1</customer_id><first_name>Bob</first_name><last_name>Smith</last_name><email>bob@email.com</email><phone_number>4161110001</phone_number><loyalty_status>Gold</loyalty_status></Customer>
+<Customer><customer_id>2</customer_id><first_name>Alice</first_name><last_name>Brown</last_name><email>alice@email.com</email><phone_number>4161110002</phone_number><loyalty_status>Silver</loyalty_status></Customer>
+<Customer><customer_id>3</customer_id><first_name>John</first_name><last_name>Lee</last_name><email>john@email.com</email><phone_number>4161110003</phone_number><loyalty_status>None</loyalty_status></Customer>
+<Customer><customer_id>4</customer_id><first_name>Maria</first_name><last_name>Garcia</last_name><email>maria@email.com</email><phone_number>4161110004</phone_number><loyalty_status>Gold</loyalty_status></Customer>
+<Customer><customer_id>5</customer_id><first_name>David</first_name><last_name>Kim</last_name><email>david@email.com</email><phone_number>4161110005</phone_number><loyalty_status>Silver</loyalty_status></Customer>
+<Customer><customer_id>6</customer_id><first_name>Sara</first_name><last_name>Wilson</last_name><email>sara@email.com</email><phone_number>4161110006</phone_number><loyalty_status>None</loyalty_status></Customer>
+<Customer><customer_id>7</customer_id><first_name>Omar</first_name><last_name>Hassan</last_name><email>omar@email.com</email><phone_number>4161110007</phone_number><loyalty_status>Gold</loyalty_status></Customer>
+<Customer><customer_id>8</customer_id><first_name>Lina</first_name><last_name>Patel</last_name><email>lina@email.com</email><phone_number>4161110008</phone_number><loyalty_status>Silver</loyalty_status></Customer>
+<Customer><customer_id>9</customer_id><first_name>Chris</first_name><last_name>Johnson</last_name><email>chris@email.com</email><phone_number>4161110009</phone_number><loyalty_status>None</loyalty_status></Customer>
+<Customer><customer_id>10</customer_id><first_name>Emma</first_name><last_name>Taylor</last_name><email>emma@email.com</email><phone_number>4161110010</phone_number><loyalty_status>Gold</loyalty_status></Customer>
+<Customer><customer_id>12</customer_id><first_name>JAVA_INSERTION_TEST</first_name><last_name>JAAV_INSERTION_TEST</last_name><email>java@email.com</email></Customer>
+<Customer><customer_id>13</customer_id><first_name>TEST</first_name><last_name>TEST</last_name><email>TEST@email.com</email></Customer>
+</Customers>
+
+<Staffs>
+<Staff><staff_id>1</staff_id><restaurant_id>1</restaurant_id><first_name>Ross</first_name><last_name>Miller</last_name><role>Manager</role><hourly_wage>30.0</hourly_wage></Staff>
+<Staff><staff_id>2</staff_id><restaurant_id>1</restaurant_id><first_name>Anna</first_name><last_name>Scott</last_name><role>Waiter</role><hourly_wage>18.0</hourly_wage></Staff>
+<Staff><staff_id>3</staff_id><restaurant_id>2</restaurant_id><first_name>Kenji</first_name><last_name>Tanaka</last_name><role>Chef</role><hourly_wage>28.0</hourly_wage></Staff>
+<Staff><staff_id>4</staff_id><restaurant_id>3</restaurant_id><first_name>Marco</first_name><last_name>Rossi</last_name><role>Chef</role><hourly_wage>26.0</hourly_wage></Staff>
+<Staff><staff_id>5</staff_id><restaurant_id>4</restaurant_id><first_name>Raj</first_name><last_name>Patel</last_name><role>Manager</role><hourly_wage>29.0</hourly_wage></Staff>
+<Staff><staff_id>6</staff_id><restaurant_id>5</restaurant_id><first_name>Carlos</first_name><last_name>Lopez</last_name><role>Waiter</role><hourly_wage>18.0</hourly_wage></Staff>
+<Staff><staff_id>7</staff_id><restaurant_id>6</restaurant_id><first_name>Li</first_name><last_name>Wang</last_name><role>Chef</role><hourly_wage>25.0</hourly_wage></Staff>
+<Staff><staff_id>8</staff_id><restaurant_id>7</restaurant_id><first_name>Mike</first_name><last_name>Brown</last_name><role>Supervisor</role><hourly_wage>22.0</hourly_wage></Staff>
+<Staff><staff_id>9</staff_id><restaurant_id>8</restaurant_id><first_name>Nina</first_name><last_name>Singh</last_name><role>Host</role><hourly_wage>17.0</hourly_wage></Staff>
+<Staff><staff_id>10</staff_id><restaurant_id>9</restaurant_id><first_name>Peter</first_name><last_name>Hall</last_name><role>Waiter</role><hourly_wage>18.0</hourly_wage></Staff>
+</Staffs>
+
+<DiningTables>
+<DiningTable><restaurant_id>1</restaurant_id><table_number>1</table_number><seating_capacity>4</seating_capacity><availability_status>Available</availability_status><seating_location_description>Window</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>1</restaurant_id><table_number>7</table_number><seating_capacity>6</seating_capacity><availability_status>Available</availability_status><seating_location_description>Patio</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>2</restaurant_id><table_number>3</table_number><seating_capacity>4</seating_capacity><availability_status>Available</availability_status><seating_location_description>Center</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>3</restaurant_id><table_number>5</table_number><seating_capacity>4</seating_capacity><availability_status>Available</availability_status><seating_location_description>Corner</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>4</restaurant_id><table_number>2</table_number><seating_capacity>6</seating_capacity><availability_status>Available</availability_status><seating_location_description>Center</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>5</restaurant_id><table_number>4</table_number><seating_capacity>4</seating_capacity><availability_status>Available</availability_status><seating_location_description>Patio</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>6</restaurant_id><table_number>6</table_number><seating_capacity>2</seating_capacity><availability_status>Available</availability_status><seating_location_description>Window</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>7</restaurant_id><table_number>8</table_number><seating_capacity>6</seating_capacity><availability_status>Available</availability_status><seating_location_description>Booth</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>8</restaurant_id><table_number>1</table_number><seating_capacity>2</seating_capacity><availability_status>Available</availability_status><seating_location_description>Window</seating_location_description></DiningTable>
+<DiningTable><restaurant_id>9</restaurant_id><table_number>9</table_number><seating_capacity>4</seating_capacity><availability_status>Available</availability_status><seating_location_description>Patio</seating_location_description></DiningTable>
+</DiningTables>
+
+<MenuItems>
+<MenuItem><menu_item_id>1</menu_item_id><staff_id>1</staff_id><item_name>Mango Juice</item_name><price>5.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>2</menu_item_id><staff_id>3</staff_id><item_name>Salmon Sushi Roll</item_name><price>14.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>3</menu_item_id><staff_id>4</staff_id><item_name>Spaghetti Carbonara</item_name><price>16.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>4</menu_item_id><staff_id>5</staff_id><item_name>Butter Chicken</item_name><price>17.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>5</menu_item_id><staff_id>6</staff_id><item_name>Chicken Taco</item_name><price>9.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>6</menu_item_id><staff_id>7</staff_id><item_name>Sweet and Sour Chicken</item_name><price>13.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>7</menu_item_id><staff_id>8</staff_id><item_name>Double Cheeseburger</item_name><price>12.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>8</menu_item_id><staff_id>9</staff_id><item_name>Vegan Salad Bowl</item_name><price>11.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>9</menu_item_id><staff_id>10</staff_id><item_name>Grilled Lobster</item_name><price>24.0</price><availability_status>Available</availability_status></MenuItem>
+<MenuItem><menu_item_id>10</menu_item_id><staff_id>2</staff_id><item_name>Shawarma Platter</item_name><price>15.0</price><availability_status>Available</availability_status></MenuItem>
+</MenuItems>
+
+<Orders>
+<Order><order_id>1</order_id><customer_id>1</customer_id><restaurant_id>1</restaurant_id><reservation_id>1</reservation_id><order_date>2026-04-09</order_date><total_amount>100.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>2</order_id><customer_id>2</customer_id><restaurant_id>2</restaurant_id><reservation_id>2</reservation_id><order_date>2026-04-10</order_date><total_amount>42.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>3</order_id><customer_id>3</customer_id><restaurant_id>3</restaurant_id><reservation_id>3</reservation_id><order_date>2026-04-11</order_date><total_amount>32.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>4</order_id><customer_id>4</customer_id><restaurant_id>4</restaurant_id><reservation_id>4</reservation_id><order_date>2026-04-11</order_date><total_amount>50.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>5</order_id><customer_id>5</customer_id><restaurant_id>5</restaurant_id><reservation_id>5</reservation_id><order_date>2026-04-12</order_date><total_amount>27.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>6</order_id><customer_id>6</customer_id><restaurant_id>6</restaurant_id><reservation_id>6</reservation_id><order_date>2026-04-12</order_date><total_amount>26.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>7</order_id><customer_id>7</customer_id><restaurant_id>7</restaurant_id><reservation_id>7</reservation_id><order_date>2026-04-13</order_date><total_amount>48.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>8</order_id><customer_id>8</customer_id><restaurant_id>8</restaurant_id><reservation_id>8</reservation_id><order_date>2026-04-13</order_date><total_amount>22.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>9</order_id><customer_id>9</customer_id><restaurant_id>9</restaurant_id><reservation_id>9</reservation_id><order_date>2026-04-14</order_date><total_amount>72.0</total_amount><order_status>Completed</order_status></Order>
+<Order><order_id>10</order_id><customer_id>10</customer_id><restaurant_id>1</restaurant_id><reservation_id>10</reservation_id><order_date>2026-04-15</order_date><total_amount>30.0</total_amount><order_status>Completed</order_status></Order>
+</Orders>
+
+<Reservations>
+<Reservation><reservation_id>1</reservation_id><customer_id>1</customer_id><restaurant_id>1</restaurant_id><table_number>7</table_number><reservation_date>2026-04-09</reservation_date><reservation_time>18:00</reservation_time><number_of_guests>5</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>2</reservation_id><customer_id>2</customer_id><restaurant_id>2</restaurant_id><table_number>3</table_number><reservation_date>2026-04-10</reservation_date><reservation_time>19:00</reservation_time><number_of_guests>3</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>3</reservation_id><customer_id>3</customer_id><restaurant_id>3</restaurant_id><table_number>5</table_number><reservation_date>2026-04-11</reservation_date><reservation_time>18:30</reservation_time><number_of_guests>2</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>4</reservation_id><customer_id>4</customer_id><restaurant_id>4</restaurant_id><table_number>2</table_number><reservation_date>2026-04-11</reservation_date><reservation_time>20:00</reservation_time><number_of_guests>4</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>5</reservation_id><customer_id>5</customer_id><restaurant_id>5</restaurant_id><table_number>4</table_number><reservation_date>2026-04-12</reservation_date><reservation_time>17:00</reservation_time><number_of_guests>3</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>6</reservation_id><customer_id>6</customer_id><restaurant_id>6</restaurant_id><table_number>6</table_number><reservation_date>2026-04-12</reservation_date><reservation_time>19:30</reservation_time><number_of_guests>2</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>7</reservation_id><customer_id>7</customer_id><restaurant_id>7</restaurant_id><table_number>8</table_number><reservation_date>2026-04-13</reservation_date><reservation_time>18:00</reservation_time><number_of_guests>5</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>8</reservation_id><customer_id>8</customer_id><restaurant_id>8</restaurant_id><table_number>1</table_number><reservation_date>2026-04-13</reservation_date><reservation_time>17:30</reservation_time><number_of_guests>2</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>9</reservation_id><customer_id>9</customer_id><restaurant_id>9</restaurant_id><table_number>9</table_number><reservation_date>2026-04-14</reservation_date><reservation_time>20:00</reservation_time><number_of_guests>3</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+<Reservation><reservation_id>10</reservation_id><customer_id>10</customer_id><restaurant_id>1</restaurant_id><table_number>1</table_number><reservation_date>2026-04-15</reservation_date><reservation_time>18:30</reservation_time><number_of_guests>2</number_of_guests><reservation_status>Confirmed</reservation_status></Reservation>
+</Reservations>
+
+<OrderHandledBy>
+<OrderHandled><order_id>1</order_id><staff_id>2</staff_id></OrderHandled>
+<OrderHandled><order_id>2</order_id><staff_id>3</staff_id></OrderHandled>
+<OrderHandled><order_id>3</order_id><staff_id>4</staff_id></OrderHandled>
+<OrderHandled><order_id>4</order_id><staff_id>5</staff_id></OrderHandled>
+<OrderHandled><order_id>5</order_id><staff_id>6</staff_id></OrderHandled>
+<OrderHandled><order_id>6</order_id><staff_id>7</staff_id></OrderHandled>
+<OrderHandled><order_id>7</order_id><staff_id>8</staff_id></OrderHandled>
+<OrderHandled><order_id>8</order_id><staff_id>9</staff_id></OrderHandled>
+<OrderHandled><order_id>9</order_id><staff_id>10</staff_id></OrderHandled>
+<OrderHandled><order_id>10</order_id><staff_id>2</staff_id></OrderHandled>
+</OrderHandledBy>
+
+<OrderContainsItems>
+<OrderItem><order_id>1</order_id><menu_item_id>1</menu_item_id><quantity>5</quantity></OrderItem>
+<OrderItem><order_id>2</order_id><menu_item_id>2</menu_item_id><quantity>3</quantity></OrderItem>
+<OrderItem><order_id>3</order_id><menu_item_id>3</menu_item_id><quantity>2</quantity></OrderItem>
+<OrderItem><order_id>4</order_id><menu_item_id>4</menu_item_id><quantity>3</quantity></OrderItem>
+<OrderItem><order_id>5</order_id><menu_item_id>5</menu_item_id><quantity>2</quantity></OrderItem>
+<OrderItem><order_id>6</order_id><menu_item_id>6</menu_item_id><quantity>2</quantity></OrderItem>
+<OrderItem><order_id>7</order_id><menu_item_id>7</menu_item_id><quantity>4</quantity></OrderItem>
+<OrderItem><order_id>8</order_id><menu_item_id>8</menu_item_id><quantity>2</quantity></OrderItem>
+<OrderItem><order_id>9</order_id><menu_item_id>9</menu_item_id><quantity>3</quantity></OrderItem>
+<OrderItem><order_id>10</order_id><menu_item_id>10</menu_item_id><quantity>2</quantity></OrderItem>
+</OrderContainsItems>
+
+</RestaurantSystem>
