@@ -1,6 +1,6 @@
 # Data_Engineering_Final_Project---Restaurant_Database_Management_System
 
-# Restaurant Database Management System:
+Restaurant Database Management System:
 
 This project focuses on the step-by-step design and implementation of a restaurant-based database system, developed across multiple labs. The work begins from an initial conceptual design and gradually builds into a fully functional system that integrates SQL, Java, and XML. Each stage of the project directly builds on the previous one, allowing the database to evolve from an ER model into a complete application with data interaction and transformation capabilities.
 
